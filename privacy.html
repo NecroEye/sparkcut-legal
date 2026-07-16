@@ -16,9 +16,7 @@
             --text-muted: #6E6590;
             --green: #00D4AA;
         }
-
         * { margin: 0; padding: 0; box-sizing: border-box; }
-
         body {
             background-color: var(--bg);
             color: var(--text-secondary);
@@ -27,13 +25,11 @@
             line-height: 1.8;
             min-height: 100vh;
         }
-
         .container {
             max-width: 680px;
             margin: 0 auto;
             padding: 60px 24px 80px;
         }
-
         .badge {
             display: inline-block;
             background: linear-gradient(135deg, var(--accent), var(--accent-light));
@@ -46,7 +42,6 @@
             text-transform: uppercase;
             margin-bottom: 20px;
         }
-
         .local-badge {
             display: inline-block;
             background-color: rgba(0, 212, 170, 0.12);
@@ -57,7 +52,6 @@
             border-radius: 16px;
             margin-bottom: 12px;
         }
-
         h1 {
             color: var(--text);
             font-size: 32px;
@@ -65,13 +59,11 @@
             letter-spacing: -0.5px;
             margin-bottom: 8px;
         }
-
         .updated {
             color: var(--text-muted);
             font-size: 13px;
             margin-bottom: 48px;
         }
-
         h2 {
             color: var(--text);
             font-size: 18px;
@@ -81,16 +73,13 @@
             padding-bottom: 8px;
             border-bottom: 1px solid var(--border);
         }
-
         p {
             margin-bottom: 16px;
         }
-
         .highlight {
             color: var(--text);
             font-weight: 600;
         }
-
         .card {
             background-color: var(--surface);
             border: 1px solid var(--border);
@@ -98,7 +87,6 @@
             padding: 20px;
             margin: 16px 0;
         }
-
         .card-title {
             color: var(--green);
             font-size: 13px;
@@ -107,27 +95,22 @@
             letter-spacing: 0.5px;
             margin-bottom: 10px;
         }
-
         .card-negative {
             background-color: rgba(248, 81, 73, 0.06);
             border: 1px solid rgba(248, 81, 73, 0.2);
         }
-
         .card-negative .card-title {
             color: #F85149;
         }
-
         ul {
             list-style: none;
             padding: 0;
         }
-
         ul li {
             position: relative;
             padding-left: 20px;
             margin-bottom: 8px;
         }
-
         ul li::before {
             content: '';
             position: absolute;
@@ -138,24 +121,20 @@
             border-radius: 50%;
             background-color: var(--accent);
         }
-
         .card-negative ul li::before {
             background-color: #F85149;
         }
-
         table {
             width: 100%;
             border-collapse: collapse;
             margin: 16px 0;
             font-size: 14px;
         }
-
         th, td {
             text-align: left;
             padding: 12px 16px;
             border-bottom: 1px solid var(--border);
         }
-
         th {
             color: var(--text-muted);
             font-size: 12px;
@@ -163,26 +142,21 @@
             text-transform: uppercase;
             letter-spacing: 0.5px;
         }
-
         td {
             color: var(--text-secondary);
         }
-
         td:first-child {
             color: var(--text);
             font-weight: 500;
         }
-
         a {
             color: var(--accent-light);
             text-decoration: none;
             transition: color 0.2s;
         }
-
         a:hover {
             color: var(--green);
         }
-
         .footer {
             margin-top: 60px;
             padding-top: 24px;
@@ -191,14 +165,12 @@
             color: var(--text-muted);
             font-size: 13px;
         }
-
         .footer .logo {
             font-weight: 700;
             color: var(--text);
             font-size: 15px;
             margin-bottom: 4px;
         }
-
         @media (max-width: 600px) {
             .container { padding: 40px 18px 60px; }
             h1 { font-size: 26px; }
@@ -212,15 +184,12 @@
     <div class="container">
         <span class="badge">Privacy</span>
         <h1>Privacy Policy</h1>
-        <p class="updated">Last updated: May 2026</p>
-
+        <p class="updated">Last updated: July 2026</p>
         <h2>1. Overview</h2>
         <span class="local-badge">Local-first processing</span>
         <p><span class="highlight">SparkCut respects your privacy.</span> All video editing operations are performed entirely on your device. We do not upload, process, or store your media files on any external server.</p>
-
         <h2>2. Information We Collect</h2>
         <p>We collect minimal, anonymized data solely to improve the App experience:</p>
-
         <table>
             <thead>
                 <tr>
@@ -250,21 +219,25 @@
                     <td>Ad relevance</td>
                     <td>Ad ID (resettable)</td>
                 </tr>
+                <tr>
+                    <td>Purchase history</td>
+                    <td>Subscription management &amp; entitlements</td>
+                    <td>Anonymous app ID / Play order ID</td>
+                </tr>
             </tbody>
         </table>
-
         <h2>3. Information We Do NOT Collect</h2>
         <div class="card card-negative">
             <div class="card-title">Never collected</div>
             <ul>
                 <li>Your videos, photos, or audio files</li>
+                <li>Microphone or screen-recording content &mdash; recordings are saved only to your device</li>
                 <li>Your contacts, messages, or call history</li>
                 <li>Your precise or approximate location</li>
                 <li>Personally identifiable information (name, email, phone)</li>
                 <li>Browsing history or app usage outside SparkCut</li>
             </ul>
         </div>
-
         <h2>4. Third-Party Services</h2>
         <p>SparkCut integrates the following third-party services, each with their own privacy policies:</p>
         <div class="card">
@@ -273,36 +246,35 @@
                 <li><span class="highlight">Firebase Crashlytics</span> &mdash; anonymous crash reporting</li>
                 <li><span class="highlight">Firebase Analytics</span> &mdash; anonymous usage statistics</li>
                 <li><span class="highlight">Google AdMob</span> &mdash; advertisement delivery</li>
+                <li><span class="highlight">RevenueCat</span> &mdash; subscription management and receipt validation</li>
             </ul>
         </div>
         <p>Google's advertising partners may use cookies or advertising identifiers to serve personalized ads. You can opt out of personalized advertising through your device settings (Settings &gt; Google &gt; Ads &gt; Opt out of Ads Personalization).</p>
-
         <h2>5. Advertising</h2>
         <p>SparkCut displays advertisements through Google AdMob. These ads may use your device's Advertising ID to deliver relevant content. The Advertising ID is a resettable identifier and does not expose personal information.</p>
+        <p>In the European Economic Area and the United Kingdom, SparkCut shows a consent form (Google User Messaging Platform) before any ads are requested. You can change your choice at any time; non-personalized ads are available if you decline.</p>
         <p>We comply with Google's <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Advertising Policies</a> and <a href="https://www.google.com/policies/privacy/" target="_blank" rel="noopener">Privacy Policy</a>.</p>
-
-        <h2>6. Data Storage & Security</h2>
+        <h2>6. Purchases &amp; Subscriptions</h2>
+        <p>SparkCut offers an optional subscription (<span class="highlight">SparkCut Pro</span>) with weekly, monthly, and yearly plans. All payments are processed by <span class="highlight">Google Play Billing</span> &mdash; we never see or store your payment card details.</p>
+        <p>To activate and manage your subscription, purchase receipts are validated by <span class="highlight">RevenueCat</span> (RevenueCat, Inc.), which receives an anonymous app-generated identifier and Google Play purchase tokens. No name, email, or payment information is shared with RevenueCat. See the <a href="https://www.revenuecat.com/privacy" target="_blank" rel="noopener">RevenueCat Privacy Policy</a>.</p>
+        <p>Subscriptions renew automatically unless cancelled at least 24 hours before the end of the current period. You can cancel anytime in Google Play &gt; Subscriptions. Refunds are handled according to Google Play's refund policy.</p>
+        <h2>7. Data Storage &amp; Security</h2>
         <p>All your projects, exports, and media remain stored <span class="highlight">locally on your device</span>. We do not have access to your device storage. Analytics data is transmitted securely via HTTPS to Firebase servers.</p>
         <p>When you uninstall SparkCut, all local app data is permanently removed from your device.</p>
-
-        <h2>7. Opt Out</h2>
+        <h2>8. Opt Out</h2>
         <p>You have full control over data collection:</p>
         <ul>
             <li><span class="highlight">Analytics:</span> Disable in SparkCut Settings at any time</li>
             <li><span class="highlight">Personalized ads:</span> Opt out via device settings</li>
             <li><span class="highlight">Crash reports:</span> Disable in device system settings</li>
         </ul>
-
-        <h2>8. Children's Privacy</h2>
+        <h2>9. Children's Privacy</h2>
         <p>SparkCut is not directed at children under the age of 13. We do not knowingly collect personal information from children. If you believe a child has provided us with personal data, please contact us immediately and we will take steps to remove such information.</p>
-
-        <h2>9. International Data Transfers</h2>
+        <h2>10. International Data Transfers</h2>
         <p>Anonymous analytics and crash data may be processed on servers located outside your country of residence. By using SparkCut, you consent to this transfer. All transfers are conducted securely and in compliance with applicable data protection laws.</p>
-
-        <h2>10. Changes to This Policy</h2>
+        <h2>11. Changes to This Policy</h2>
         <p>We may update this Privacy Policy from time to time. Changes will be communicated through App updates. The "Last updated" date at the top will reflect the most recent revision. Continued use of SparkCut constitutes acceptance of the updated policy.</p>
-
-        <h2>11. Your Rights</h2>
+        <h2>12. Your Rights</h2>
         <p>Depending on your jurisdiction, you may have the right to:</p>
         <ul>
             <li>Request access to any data we hold about you</li>
@@ -311,11 +283,9 @@
             <li>Lodge a complaint with a data protection authority</li>
         </ul>
         <p>Since we do not collect personally identifiable information, most of these rights are satisfied by default.</p>
-
-        <h2>12. Contact Us</h2>
+        <h2>13. Contact Us</h2>
         <p>For privacy-related questions or concerns, please contact us at:</p>
         <p><a href="mailto:gozummuratcan@gmail.com">gozummuratcan@gmail.com</a></p>
-
         <div class="footer">
             <div class="logo">SparkCut</div>
             <p>&copy; 2026 Muratcan Gozum. All rights reserved.</p>
